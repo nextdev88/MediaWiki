@@ -1,0 +1,4 @@
+CREATE USER 'wiki'@'localhost' IDENTIFIED BY '123456';
+CREATE DATABASE dbname;
+GRANT ALL PRIVILEGES ON dbname.* TO 'wiki'@'localhost';
+FLUSH PRIVILEGES;
