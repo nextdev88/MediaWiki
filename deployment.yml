@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mediawiki
+spec:
+  selector:
+    matchLabels:
+      run: mediawiki
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        run: mediawiki
+    spec:
+      containers:
+      - name: mediawiki
+        image: <repository location of mediawiki image>
+        ports:
+        - containerPort: 80
