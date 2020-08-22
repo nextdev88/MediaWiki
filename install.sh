@@ -1,4 +1,5 @@
 #!/bin/bash
+#exec /usr/sbin/init
 yum install git -y
 yum install wget -y
 yum install dnf -y

@@ -9,6 +9,8 @@ Run CFT.json in AWS Stack
 2. If wanted this setup containerized, use provided DockerFile to create image with above reqs
    cmd: docker build -t <nameofimage> <location of dockerfile>
    Push this image to any of the docker registry (dockerhub, quay, ACR, ECR)
+
+docker run --privileged  -p 9090:80 -h bk -d final
  
 3. K8s manifest for deployment & Expose to internet
 
